@@ -1,0 +1,158 @@
+/* 
+Primary brown color: #654321
+Secondary brown color: #22160b
+ */
+
+/* =========Global============ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+a,
+a:link,
+a:visited {
+  color: #654321;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #22160b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #654321;
+  text-transform: uppercase;
+}
+section {
+  padding: 30px 0;
+}
+/* =========Reusable============ */
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* ==Grid== */
+
+.row {
+  overflow: hidden;
+}
+
+.col-1-of-3 {
+  width: 33.333%;
+  float: left;
+}
+
+.active {
+  border-bottom: 2px solid #22160b !important;
+}
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.btn {
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: all 0.3;
+}
+.btnRound {
+  border-radius: 25px;
+}
+.btnWhite {
+  display: inline-block;
+  background-color: #fff;
+}
+.btnWhite:hover {
+  background-color: #22160b;
+  color: #fff;
+}
+
+.sectionHeading {
+  text-align: center;
+  font-size: 240%;
+  margin: 30px 0;
+  letter-spacing: 3px;
+  padding: 5px;
+}
+.sectionHeading::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 90px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #654321;
+}
+/* =======Header========= */
+header {
+  padding: 10px 0;
+}
+#logo {
+  width: 35px;
+}
+#logo img {
+  width: 100%;
+}
+.mainMenu ul {
+  list-style: none;
+  margin-top: 28px;
+}
+.mainMenu ul li {
+  display: inline-block;
+  margin-left: 7px;
+}
+.mainMenu ul li a {
+  border-bottom: 2px solid transparent;
+  padding: 5px 8px;
+}
+.mainMenu ul li a:hover {
+  border-bottom: 2px solid #22160b;
+}
+
+/* =========Landing Section============ */
+.landingSection {
+  min-height: 85vh;
+  background-image: linear-gradient(to right, #ffffffb3, #a3b0bdb3),
+    url(../images/headerbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landingSectionText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #654321;
+}
+.landingSection h1,
+.landingSection p {
+  text-transform: uppercase;
+}
+.landingSection h1 {
+  font-size: 380%;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+.landingSection p {
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 35px;
+}
+.landingSection a {
+  font-size: 130%;
+}
