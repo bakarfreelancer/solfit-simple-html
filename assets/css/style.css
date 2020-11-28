@@ -1,6 +1,8 @@
 /* 
 Primary brown color: #654321
 Secondary brown color: #22160b
+Sale tag: #ff971e
+Light grey: rgb(85, 85, 85)
  */
 
 /* =========Global============ */
@@ -47,8 +49,24 @@ section {
   overflow: hidden;
 }
 
+.col-1-of-2 {
+  width: 50%;
+  float: left;
+}
 .col-1-of-3 {
   width: 33.333%;
+  float: left;
+}
+.col-2-of-3 {
+  width: 66.666%;
+  float: left;
+}
+.col-1-of-4 {
+  width: 25%;
+  float: left;
+}
+.col-3-of-4 {
+  width: 75%;
   float: left;
 }
 
@@ -61,7 +79,10 @@ section {
 .f-right {
   float: right;
 }
+
+/* ==Button== */
 .btn {
+  display: inline-block;
   padding: 12px 20px;
   text-transform: uppercase;
   transition: all 0.3;
@@ -70,14 +91,23 @@ section {
   border-radius: 25px;
 }
 .btnWhite {
-  display: inline-block;
   background-color: #fff;
 }
 .btnWhite:hover {
   background-color: #22160b;
   color: #fff;
 }
+.btnBuy {
+  border: 1px solid #654321;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.btnBuy:hover {
+  background-color: #654321;
+  color: white;
+}
 
+/* ==Headings== */
 .sectionHeading {
   text-align: center;
   font-size: 240%;
@@ -93,6 +123,66 @@ section {
   height: 8px;
   border-radius: 8px;
   background-color: #654321;
+}
+
+/* ==Product Card== */
+.productCard2,
+.productCard {
+  border: 1px solid #654321;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px;
+  padding-bottom: 30px;
+}
+.productCard .productImage {
+  position: relative;
+}
+.productImage img {
+  width: 100%;
+}
+
+.productCard .productDesc {
+  text-align: center;
+  padding: 15px;
+}
+.productCard .productPrice {
+  margin: 15px 0;
+}
+.productCard .productPrice span {
+  padding: 0 8px;
+}
+.productCard .oldPrice {
+  text-decoration: line-through;
+  color: rgb(85, 85, 85);
+}
+.productCard2 .currentPrice,
+.productCard .currentPrice {
+  font-weight: bold;
+  font-size: 120%;
+  color: #654321;
+}
+.productCard .saleTag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  background-color: #ff971e;
+  padding: 17px 11px 14px 11px;
+  border-radius: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ==Product Card== */
+.productCard2 {
+  padding: 20px 3px;
+  background-color: #fff;
+}
+.productCard2 .productDesc {
+  margin-left: 5px;
+}
+.productCard2 .productPrice {
+  margin: 15px 0;
 }
 /* =======Header========= */
 header {
@@ -137,11 +227,12 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #654321;
+  color: #22160b;
 }
 .landingSection h1,
 .landingSection p {
   text-transform: uppercase;
+  color: #22160b;
 }
 .landingSection h1 {
   font-size: 380%;
@@ -155,4 +246,97 @@ header {
 }
 .landingSection a {
   font-size: 130%;
+}
+
+/* =========Featured Section============ */
+.featuredSection {
+  padding: 70px 0 100px;
+  background-color: #e6e6e6;
+}
+
+/* =========Review Section============ */
+.singleReview {
+  background-color: #654321;
+  color: #fff;
+  padding: 20px 60px;
+  margin: 30px 80px;
+  border-radius: 10px;
+}
+.reviewImage {
+  width: 130px;
+}
+.reviewImage img {
+  width: 100%;
+  border-radius: 100px;
+}
+.reviewBody {
+  line-height: 25px;
+  letter-spacing: 1.5px;
+}
+.rating {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 180%;
+}
+
+/* =========Footer Section============ */
+footer {
+  background-color: #555555;
+  color: rgb(219, 219, 219);
+  padding-top: 50px;
+}
+.footerCol {
+  margin: 0 15px;
+}
+.footerHead {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footerAbout {
+  text-align: justify;
+  line-height: 20px;
+}
+.footerMenu {
+  list-style: none;
+}
+.footerMenu a {
+  color: rgb(219, 219, 219);
+  display: inline-block;
+  padding: 3px;
+  margin: 5px;
+}
+.footerMenu a:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+.footerSocialMenu li {
+  display: inline-block;
+  padding: 5px;
+}
+.footerSocialMenu a {
+  color: rgb(219, 219, 219);
+  font-size: 200%;
+}
+.footerSocialMenu a:hover {
+  display: block;
+  transform: translateY(-5px);
+}
+
+.newsLetterForm input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  width: 80%;
+  margin-bottom: 3px;
+}
+.newsLetterForm input[type="submit"] {
+  background-color: #654321;
+  color: #fff;
+}
+.footerBotom {
+  background-color: rgb(44, 44, 44);
+  margin-top: 50px;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
 }
