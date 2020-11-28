@@ -41,6 +41,7 @@ section {
 .container {
   max-width: 1120px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* ==Grid== */
@@ -173,7 +174,7 @@ section {
   color: #fff;
 }
 
-/* ==Product Card== */
+/* ==Product Card style 2== */
 .productCard2 {
   padding: 20px 3px;
   background-color: #fff;
@@ -184,19 +185,45 @@ section {
 .productCard2 .productPrice {
   margin: 15px 0;
 }
+
+/* ==Page Featured== */
+.pageFeatured {
+  height: 30vh;
+  background-image: linear-gradient(to right, #ffffffb3, #a3b0bdb3),
+    url(../images/headerbg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.pageFeatured h2 {
+  padding-top: 30px;
+  font-size: 350%;
+  color: #22160b;
+  font-weight: normal;
+}
+.pageFeatured h2::after {
+  content: "";
+  display: block;
+  margin: 10px auto;
+  width: 90px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #22160b;
+}
+
 /* =======Header========= */
 header {
   padding: 10px 0;
 }
 #logo {
-  width: 35px;
+  width: 30px;
 }
 #logo img {
   width: 100%;
 }
 .mainMenu ul {
   list-style: none;
-  margin-top: 28px;
+  margin-top: 13px;
 }
 .mainMenu ul li {
   display: inline-block;
@@ -339,4 +366,138 @@ footer {
   color: #fff;
   padding: 15px;
   text-align: center;
+}
+
+/* ============================== */
+/* =========Shop Page============ */
+/* ============================== */
+
+/* =========Filters============ */
+.filters {
+  background-color: #654321;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+.filters select {
+  margin-right: 20px;
+  padding: 5px;
+  background-color: #654321;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-radius: 8px;
+}
+
+/* ============================== */
+/* =========Login Page============ */
+/* ============================== */
+.formCard {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #eeeeee;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(20, 20, 20, 0.24);
+  text-align: center;
+  color: #654321;
+}
+.userForm {
+  margin: 15px 10px;
+}
+.userForm input {
+  display: block;
+  margin: 5px auto 10px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #654321;
+  border-radius: 8px;
+}
+.userForm input[type="submit"] {
+  background-color: #654321;
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 105%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.userForm input[type="submit"]:hover {
+  background-color: #fff;
+  color: #654321;
+  border-color: #654321;
+}
+
+/* ============================== */
+/* =========Responsive============ */
+/* ============================== */
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  body {
+    font-size: 14px;
+  }
+  /* Grid columns */
+  .col-3-of-4,
+  .col-1-of-4 {
+    width: 50%;
+  }
+  .smFull {
+    width: 100%;
+    float: none;
+  }
+  .singleReview {
+    text-align: center;
+  }
+  .reviewImage {
+    width: 45%;
+    margin: 0 auto;
+  }
+  .footerCol {
+    margin-top: 15px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  #logo {
+    width: 25px;
+  }
+  body {
+    font-size: 12px;
+  }
+  .col-1-of-2,
+  .col-1-of-3,
+  .col-1-of-4,
+  .col-2-of-3,
+  .col-3-of-4 {
+    width: 100%;
+    float: none;
+  }
+  .landingSectionText {
+    width: 320px;
+  }
+  .productDesc {
+    text-align: center;
+  }
+  .singleReview {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .footerCol {
+    text-align: center;
+  }
+
+  .filters label:not(:first-child)::before {
+    content: "";
+    display: block;
+    height: 5px;
+  }
+  .productImage {
+    width: 80%;
+    margin: auto;
+  }
 }
