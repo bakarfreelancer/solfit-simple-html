@@ -1,3 +1,3 @@
 # solfit-simple-html
 Solefit Simple project for html css tutorials
-View demo [https://96.theoperatingsystems.com/solefit](https://96.theoperatingsystems.com/solefit)
+View demo [https://projects.theoperatingsystems.com/solefit](https://projects.theoperatingsystems.com/solefit)
